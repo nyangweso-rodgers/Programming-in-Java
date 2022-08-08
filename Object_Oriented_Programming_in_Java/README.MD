@@ -7,7 +7,7 @@
 
 
 # Introduction to OOP in Java
-
+__Object Orinetation__ is a style of programming in which the unit of behavior is an __object__ which consists of __State__ (date, held in fields) and __behavior__ (methods, functions)
 # Methods
 * Fundamentally, __Methods__ as mechanisms for organizing code. enables creation of reusable code blocks. __Features__ of methods include:
     * methods can receive data
