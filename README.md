@@ -13,9 +13,10 @@
     - Date & Time
 4. [Control Flown](https://github.com/nyangweso-rodgers/Java_Projects/tree/main/Control_Flow)
 5. [Object Oriented Programming](https://github.com/nyangweso-rodgers/Java_Projects/tree/main/Object_Oriented_Programming_in_Java)
-6. []()
+6. [Reference]()
     - [Java Tutorial for Beginners | Full Course](https://www.youtube.com/watch?v=8cm1x4bC610)
     - [Spring Boot Quick Start 1 - Introduction](https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x)
+    - [How to Install OpenJDK (Free Java) – Multi OS Guide](https://www.freecodecamp.org/news/install-openjdk-free-java-multi-os-guide/)
 
 # Overview Of Java
 __Java__ was/is a simpler, safer version of __C++__. 
