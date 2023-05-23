@@ -1,22 +1,6 @@
-# Introduction to Java Programming Language
+# Getting Started with Java
 
 ## Table Of Contents
-- [Overview Of Java](#Overview-Of-Java)
-
-- [History of Java](#History-of-Java)
-
-- [Features of Java](#Features-of-Java)
-
-- [Why you should use Java for Backend Development](#Why-you-should-use-Java-for-Backend-Development)
-
-- [Drawbacks of the Java Programming Language](#Drawbacks-of-the-Java-Programming-Language)
-
-- [Differences Between a Java Backend and a Node.js Backend](#Differences-Between-a-Java-Backend-and-a-Node.js-Backend)
-
-- [Top Java Frameworks for Backend Development](#Top-Java-Frameworks-for-Backend-Development)
-
-- [Further Reading]()
-    - [Why You Should Use Java for Backend Development](https://www.freecodecamp.org/news/java-for-backend-web-development/)
 
 # Overview Of Java
 * __Java__ was/is a simpler, safer version of __C++__. 
@@ -84,16 +68,3 @@
 * Java also provides better security features, such as the Java Virtual Machine (JVM), which has memory protection and isolation. Java also has a large number of libraries and tools available, which makes it easier to develop and maintain large-scale applications.
 
 * Node.js is also well-suited for real-time applications, such as chat applications, thanks to its event-driven architecture. Node.js also has a large and active community, which provides a wealth of libraries and tools for various tasks.
-
-# Top Java Frameworks for Backend Development
-1. __Spring__:
-    * The framework's core functionality can be used by any Java application, although there are enhancements for constructing web applications on top of the Java EE framework.
-
-2. __Hibernate__:
-    * Hibernate ORM is an object-relational mapping tool written in Java that provides a framework for translating a relational database into an object-oriented domain model.
-
-3. __Play__:
-    * The Play Framework combines productivity and performance, making it simple to create scalable Java and Scala online applications.
-
-4. __Struts__:
-    * Apache Struts is a free and open-source web application framework used to create Java EE web applications. It uses and improves the Java Servlet API to encourage developers to use a model-view-controller paradigm. Craig McClanahan designed it and presented it to the Apache Nation.
