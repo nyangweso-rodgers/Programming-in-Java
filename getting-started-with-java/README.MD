@@ -84,3 +84,45 @@
 - **Java** also provides better security features, such as the **Java Virtual Machine** (JVM), which has memory protection and isolation. Java also has a large number of libraries and tools available, which makes it easier to develop and maintain large-scale applications.
 
 - `Node.js` is also well-suited for real-time applications, such as chat applications, thanks to its event-driven architecture. `Node.js` also has a large and active community, which provides a wealth of libraries and tools for various tasks.
+
+# Setting Java Development Environment
+
+## Java Development in VS Code
+
+- Step 1:
+
+  - Download and install [Java Development Kit]() (JDK).
+  - You can download the **JDK** from the official [Oracle website]().
+
+- Step 2:
+
+  - After you finish **JDK** installation, please reload Visual Studio Code to make it effective.
+
+- Step 3:
+
+  - Install the [Java Extension Pack]() in VSCode.
+  - This pack includes everything you need to develop Java applications in Visual Studio Code.
+
+- Step 4:
+
+  - Create a new Java project.
+  - Open VS Code and create a new folder where you want to save your Java project. Then, open the Command Palette by pressing `Ctrl+Shift+P` shortcut key and type "`Java: Create Java Project`". Press Enter and select a location for the project. Choose a name for your project and select a **JDK** version to use.
+
+- Step 5:
+
+  - Create a Java file with "Hello World" code.
+  - Once the project is created, open the `src` folder and create a new Java file with the name `HelloWorld.java`.
+  - Copy and paste the following code into the file:
+
+    ```java
+        public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+
+- Step 6:
+  - Run the program.
+  - Open the Command Palette and type "`Java: Run Java Program`" and press Enter.
+  - This will run your program and the output "Hello, World!" should be displayed in the console.
