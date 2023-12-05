@@ -120,7 +120,7 @@
 
 - How to Set the `JAVA_HOME` **Environment Variable**:
 
-  - know the installation directory of **JDK**. Take note of the path where the **JDK** is installed on your machine.
+  - know the installation directory of **JDK**. Take note of the path where the **JDK** is installed on your machine. `C:\Program Files\Java\jdk-21\`
   - On **Windows**:
     - In the System Properties window, click on the "Environment Variables" button.
     - In the "System Variables" section, click on the "New" button.
@@ -225,6 +225,28 @@
   - This will run your program and the output "Hello, World!" should be displayed in the console.
 
 ## Java Development Environment in IntelliJ IDEA, Community Edition
+
+- Set the **JDK**:
+  - You'll need to point your **IntelliJ** to the **JDK** installation directory so that it uses the correct Java version for compilation and execution.
+  - Open **IntelliJ IDEA** and go to "`File`" in the menu bar, then select "Project Structure"
+  - In the Project Structure dialog, navigate to the "SDKs" section (under "Platform Settings") on the left-hand side.
+  - Click the "+" button on the top right-hand side to add a new JDK
+  - In the "Add JDK" dialog, locate and select the directory where your JDK is installed.
+  - The JDK installation directory typically has a structure like this:
+    - On Windows:
+      ```sh
+         C:\Program Files\Java\jdk1.x.x_xx
+      ```
+    - On macOS:
+      ```sh
+         /Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home
+      ```
+  - Click "OK" to add the JDK.
+  - After adding the JDK, go to the "Project" section (under "Project Settings") on the left-hand side of the Project Structure dialog.
+  - In the "SDK" dropdown, select the JDK you just added.
+  - If you want to set the JDK for a specific module, go to the "Modules" section (under "Project Settings") on the left-hand side, select the module, and then choose the JDK from the "Module SDK" dropdown.
+  - Click "OK" to apply the changes and close the Project Structure dialog.
+  - IntelliJ IDEA should now be configured to use the JDK you selected for compilation and execution of your Java projects.
 
 # Java Automation Tools
 
