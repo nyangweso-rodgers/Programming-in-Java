@@ -1,2 +1,0 @@
-# JVM - Java Virtual Machine
-
