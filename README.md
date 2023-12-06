@@ -226,6 +226,7 @@
 
 ## Java Development Environment in IntelliJ IDEA, Community Edition
 
+- Install [IntelliJ Idea Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 - Set the **JDK**:
   - You'll need to point your **IntelliJ** to the **JDK** installation directory so that it uses the correct Java version for compilation and execution.
   - Open **IntelliJ IDEA** and go to "`File`" in the menu bar, then select "Project Structure"
