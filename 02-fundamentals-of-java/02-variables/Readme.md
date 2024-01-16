@@ -23,3 +23,11 @@
       // using final modifier
       final int maxStudents = 25;
   ```
+
+# Types Of Variables in Java
+
+## 1. Local Variables
+
+## 2. Class Variables
+
+## 3. Instance Variables (Non-static Variables)
