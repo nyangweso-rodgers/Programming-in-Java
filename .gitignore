@@ -1,0 +1,10 @@
+# IntelliJ IDEA files
+.idea/
+
+# Compiled class files
+out/
+
+# User-specific files
+*.iml
+*.iws
+*.ipr
