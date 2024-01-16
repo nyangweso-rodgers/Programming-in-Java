@@ -2,11 +2,6 @@
 
 ## Table of Contents
 
-- [Further Reading]()
-  1. [Java Code Geeks - Difference between JVM, JIR, JRE, and JDK in Java](https://www.javacodegeeks.com/2020/08/difference-between-jvm-jir-jre-and-jdk-in-java.html)
-  2. [freeCodeCamp - How to Set Up Your Java Development Environment](https://www.freecodecamp.org/news/how-to-set-up-java-development-environment-a-comprehensive-guide/)
-  3. [How to Install OpenJDK (Free Java) – Multi OS Guide](https://www.freecodecamp.org/news/install-openjdk-free-java-multi-os-guide/)
-
 # Overview Of Java
 
 - **Java** was/is a simpler, safer version of **C++**.
@@ -229,10 +224,10 @@
 - Install [IntelliJ Idea Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 - Set the **JDK**:
   - You'll need to point your **IntelliJ** to the **JDK** installation directory so that it uses the correct Java version for compilation and execution.
-  - Open **IntelliJ IDEA** and go to "`File`" in the menu bar, then select "Project Structure"
-  - In the Project Structure dialog, navigate to the "SDKs" section (under "Platform Settings") on the left-hand side.
+  - Open **IntelliJ IDEA** and go to "`File`" in the menu bar, then select "`Project Structure`"
+  - In the Project Structure dialog, navigate to the "**SDKs**" section (under "Platform Settings") on the left-hand side.
   - Click the "+" button on the top right-hand side to add a new JDK
-  - In the "Add JDK" dialog, locate and select the directory where your JDK is installed.
+  - In the "Add JDK" dialog, locate and select the directory where your **JDK** is installed.
   - The JDK installation directory typically has a structure like this:
     - On Windows:
       ```sh
@@ -257,14 +252,19 @@
 
      - **Maven** is a build automation tool used primarily for Java projects. It provides developers with a way to manage project dependencies, build and test Java code, and package Java applications.
      - **Maven** assist with the following:
+
        - **Dependency management** - makes it easy to manage project dependencies by downloading and integrating them into the project. Developers can specify dependencies in a simple `XML` format, and Maven will automatically download the required libraries and add them to the project's classpath.
        - **Build automation**: Maven automates the build process by providing a standardized build lifecycle that includes compiling, testing, packaging, and deploying Java applications. Developers can define build goals in the project's configuration file, and Maven will automatically execute these goals in the specified order.
        - **Consistency and repeatability**: Maven ensures that builds are consistent and repeatable across different environments by using a standardized build process and managing dependencies. This makes it easier to share and distribute Java applications across different machines and environments.
        - **Integration with IDEs**: Maven integrates seamlessly with popular Java IDEs such as **Eclipse**, **IntelliJ IDEA**, and **NetBeans**. This allows developers to use Maven to manage project dependencies and build Java applications directly from their IDE.
 
+     - Advantages include:
+       - It promotes the idea of Convention over Configuration which makes it easy to understand the project.
+       - automatic dependency management, you don't need to download each and every **JAR** file manually which your project needs,
+
   2. **Gradle**
 
-     - **Gradle** is a build automation tool that offers similar functionality to **Maven**, but with a more flexible and customizable build system.
+     - **Gradle** offers similar functionality to **Maven**, but with a more flexible and customizable build system. Instead of `XML`, it uses **Groovy** to define its build file which is much more readable and concise
      - It uses **Groovy** as its build language, which allows developers to write build scripts that are easy to read and maintain.
 
   3. **Ant**
@@ -282,3 +282,9 @@
   5. **Docker**
      - **Docker** is a containerization platform that allows developers to package applications and their dependencies into containers that can be easily deployed and run on any platform.
      - **Docker** can be used to automate the build and deployment process of Java applications, making it easier to manage the application's dependencies and infrastructure.
+
+# Resources
+
+1. [Java Code Geeks - Difference between JVM, JIR, JRE, and JDK in Java](https://www.javacodegeeks.com/2020/08/difference-between-jvm-jir-jre-and-jdk-in-java.html)
+2. [freeCodeCamp - How to Set Up Your Java Development Environment](https://www.freecodecamp.org/news/how-to-set-up-java-development-environment-a-comprehensive-guide/)
+3. [How to Install OpenJDK (Free Java) – Multi OS Guide](https://www.freecodecamp.org/news/install-openjdk-free-java-multi-os-guide/)
