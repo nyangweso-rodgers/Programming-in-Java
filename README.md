@@ -95,7 +95,6 @@
 
 - If we supplied an invalid argument to java command it may refuse to create **JVM** by saying “failed to create Java virtual machine: invalid argument“.
 
-
 ### Remarks
 
 - there are few differences between **JRE**, **JDK**, and **JVM**:
@@ -171,9 +170,18 @@
    - Run the installer and follow the instructions.
 
 4. Test the setup
+
    - Open a command prompt or terminal window.
    - Type `java -version` and press Enter.
-   - If the installation is successful, you'll see the Java version information.
+   - If the installation is successful, you'll see the Java version information. E.g.,
+
+     ```sh
+      java -version
+      #java version "21.0.2" 2024-01-16 LTS
+      #Java(TM) SE Runtime Environment (build 21.0.2+13-LTS-58)
+      #Java HotSpot(TM) 64-Bit Server VM (build 21.0.2+13-LTS-58, mixed mode, sharing)
+     ```
+
    - Create a simple Java program using your chosen IDE to further test the setup.a
 
 ## 2. Java Development Environment in VS Code
@@ -215,6 +223,82 @@
   - Run the program.
   - Open the Command Palette and type "`Java: Run Java Program`" and press Enter.
   - This will run your program and the output "Hello, World!" should be displayed in the console.
+
+# Writing, Compiling, and Running a Java Program
+
+## Basic Syntax Rules
+
+1. Program File Name
+   - Name of the program file should exactly match the class name.
+   - Note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.
+2. `main()` method which is a mandatory part of every Java program.
+3. Write and open `MyFirstProgram.java` file:
+   ```java
+     // sample program
+     public class MyFirstProgram {
+         public static void main(String[] args) {
+             System.out.println("My First Java Program");
+         }
+     }
+   ```
+   - The `main` method is the entry point of the Java program.
+   - Compile the Java program by:
+     ```sh
+      # compile java program
+      javac MyFirstProgram.java
+     ```
+   - This command will generate a bytecode file named "`MyFirstProgram.class`."
+   - Execute the compiled Java program using the `java` command:
+     ```sh
+      # run the file
+      java MyFirstProgram.java
+     ```
+4. Printing on Console
+
+   - To print on console we use,
+
+     ```java
+         // Print in Console
+         System.out.println();
+     ```
+
+   - `out` has some other methods. Some of them are:
+
+     ```java
+         System.out.print();
+         System.out.printf();
+     ```
+
+## Components of a Java program
+
+### 1. `public` Keyword
+
+- is an access **modifier**, which specifies that the class is accessible from any other class. In Java, a class can be `public`, `package-private`(default, if no modifier is specified), `protected`, or `private`. The `public` modifier allows the class to be accessed from outside its package.
+
+### 2. `class` Keyword
+
+- `class` keyword is used to declare a class in Java.
+- Class names in Java should start with a capital letter and follow **CamelCase** conventions.
+
+### 3. `public static void main(String[] args)`
+
+- This line declares the main method, which is the entry point of a Java application.
+- `public`: The `main` method must be declared as `public` so that it can be accessed by the Java runtime system.
+- `static` keyword indicates that the method belongs to the class itself rather than to an instance of the class. It allows the method to be called without creating an instance of the class.
+- `void` keyword indicates that the `main` method does not return any value.
+- `main`: This is the name of the method. The **JVM** looks for this specific method signature as the starting point of execution.
+- `(String[] args)`: This is the parameter list for the main method. The `args` parameter allows you to pass command-line arguments to your Java program.
+
+## Java Identifiers
+
+- Names used for classes, variables, and methods are called **identifiers**.
+- **Remarks**:
+  - All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (`_`).
+  - After the first character, identifiers can have any combination of characters.
+  - A key word cannot be used as an identifier.
+  - Most importantly, identifiers are case sensitive.
+  - Examples of legal identifiers: age, $salary, `_value`, `__1_value`.
+  - Examples of illegal identifiers: 123abc, -salary.
 
 # Resources
 
