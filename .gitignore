@@ -1,5 +1,6 @@
 # IntelliJ IDEA files
 .idea/
+.vscode/
 
 # Compiled class files
 *.class
