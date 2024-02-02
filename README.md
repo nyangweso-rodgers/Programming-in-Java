@@ -269,6 +269,28 @@
          System.out.printf();
      ```
 
+- **Remarks**:
+  - We can organize the project/folder structure to have all the compiled files stored in a separate subfolder by the following:
+    - Create a separate directory for your compiled files, e.g., `bin`
+      ```kotlin
+        project/
+        |-src/
+          |-subfolder1/
+          |-subfolder2/
+        |-bin/
+      ```
+    - Open a terminal and navigate to your project directory.
+    - Compile your Java files with the `-d` option to specify the destination directory for the compiled files. Here's an example:
+      ```sh
+        javac -d bin src/**/*.java
+      ```
+    - This command compiles all `.java` files in the `src` directory and its subdirectories and places the corresponding `.class` files in the `bin` directory.
+    - Note: The `**` in the path is a wildcard that matches any number of subdirectories.
+    - Remember to include the `bin` directory in your `.gitignore` file to avoid tracking compiled files in your version control system.
+      ```gitignore
+        bin/
+      ```
+
 ## Components of a Java program
 
 ### 1. `public` Keyword
