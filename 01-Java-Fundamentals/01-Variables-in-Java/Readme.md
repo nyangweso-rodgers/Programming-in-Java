@@ -56,43 +56,58 @@
 
 - Remarks:
 
-  - Types of variables:
+# Types of Variables
 
-    - local
-    - instance
-    - static: single copy of variable is create & shared among all objects at class level
+## 1. local
 
-  - Get output from different classes:
+## 2. instance
 
-    ```java
-      // Varaibles in Java
+## 3. `static`
 
-      // public class
-      class MainClass {
-          public static void main(String[] args) {
-              MyVariables.main(args); //
-              Rectangle.main(args); //
-          }
-      }
+- Whenever a variable is declared as `static`, this means there is only one copy of it for the entire class, rather than each instance having its own copy. A `static` method means it can be called without creating an instance of the class.
+- `Static` variables and methods in Java provide several advantages:
 
-      // length variable
-      class MyVariables {
-          public static void main(String[] args) {
-          final int length;
-          length = 50;
-            System.out.println(length); // Output: 50
-          }
-      }
+  - including memory efficiency,
+  - global access,
+  - object independence,
+  - performance, and
+  - code organization.
 
-      // get area of the rectangle
-      class Rectangle {
-          public static void main(String[] args) {
-              int width = 100;
-              int length = 20;
-              System.out.println(width * length); // Output:
-          }
-      }
-    ```
+- Example:
+
+# Remarks
+
+- Get output from different classes:
+
+  ```java
+    // Varaibles in Java
+
+    // public class
+    class MainClass {
+        public static void main(String[] args) {
+            MyVariables.main(args); //
+            Rectangle.main(args); //
+        }
+    }
+
+    // length variable
+    class MyVariables {
+        public static void main(String[] args) {
+        final int length;
+        length = 50;
+          System.out.println(length); // Output: 50
+        }
+    }
+
+    // get area of the rectangle
+    class Rectangle {
+        public static void main(String[] args) {
+            int width = 100;
+            int length = 20;
+            System.out.println(width * length); // Output:
+        }
+    }
+  ```
 
 # Types Of Variables in Java
 
