@@ -56,6 +56,12 @@
 
 - Remarks:
 
+  - Types of variables:
+
+    - local
+    - instance
+    - static: single copy of variable is create & shared among all objects at class level
+
   - Get output from different classes:
 
     ```java
