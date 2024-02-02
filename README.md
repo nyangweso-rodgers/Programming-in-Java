@@ -300,6 +300,10 @@
   - Examples of legal identifiers: age, $salary, `_value`, `__1_value`.
   - Examples of illegal identifiers: 123abc, -salary.
 
+# Java Garbage Collection
+
+- **Garbage Collection** is the process by which Java performs automatic memory management. When Java programs run on **JVM**, objects are created on the **heap**. When some objects no longer needed. **Garbage Collection** will find the, delete them to free up memory.
+
 # Resources
 
 1. [JDK 21 Documentation](https://docs.oracle.com/en/java/javase/21/index.html)
