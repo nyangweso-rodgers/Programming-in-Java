@@ -4,6 +4,12 @@
 
 # Setting Java Development Environment in Windows
 
+## Prerequisites for VS Code
+
+1. [Java Development Kit (JDK)](https://www.microsoft.com/openjdk)
+2. [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+3. [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)
+
 ## Step #1: Install [JDK](https://www.oracle.com/java/technologies/downloads/)
 
 - After the installation is complete, delete the downloaded file to recover disk space.
