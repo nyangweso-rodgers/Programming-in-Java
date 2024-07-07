@@ -103,45 +103,6 @@
   - **JVM** comes along with both **JDK** and **JRE** and created when you execute the Java program by giving the “java” command.
 - **JDK** provides all the tools and executable require to compile debug and execute Java Program. Just like **JRE**, **JDK** is also platform-specific and you need to use separate installers for installing **JDK** on Linux and Windows.
 
-# Java Automation Tools
-
-- some of the Popular Java Automation Tools include:
-
-  1. **Maven**
-
-     - **Maven** is a build automation tool used primarily for Java projects. It provides developers with a way to manage project dependencies, build and test Java code, and package Java applications.
-     - **Maven** assist with the following:
-
-       - **Dependency management** - makes it easy to manage project dependencies by downloading and integrating them into the project. Developers can specify dependencies in a simple `XML` format, and Maven will automatically download the required libraries and add them to the project's classpath.
-       - **Build automation**: Maven automates the build process by providing a standardized build lifecycle that includes compiling, testing, packaging, and deploying Java applications. Developers can define build goals in the project's configuration file, and Maven will automatically execute these goals in the specified order.
-       - **Consistency and repeatability**: Maven ensures that builds are consistent and repeatable across different environments by using a standardized build process and managing dependencies. This makes it easier to share and distribute Java applications across different machines and environments.
-       - **Integration with IDEs**: Maven integrates seamlessly with popular Java IDEs such as **Eclipse**, **IntelliJ IDEA**, and **NetBeans**. This allows developers to use Maven to manage project dependencies and build Java applications directly from their IDE.
-
-     - Advantages include:
-       - It promotes the idea of Convention over Configuration which makes it easy to understand the project.
-       - automatic dependency management, you don't need to download each and every **JAR** file manually which your project needs,
-
-  2. **Gradle**
-
-     - **Gradle** offers similar functionality to **Maven**, but with a more flexible and customizable build system. Instead of `XML`, it uses **Groovy** to define its build file which is much more readable and concise
-     - It uses **Groovy** as its build language, which allows developers to write build scripts that are easy to read and maintain.
-
-  3. **Ant**
-
-     - **Apache Ant** is a Java-based build tool that focuses on automation of software build processes. Ant uses XML-based configuration files to define build tasks, which can include compiling source code, running unit tests, and creating application archives.
-
-  4. **Jenkins**
-
-     - **Jenkins** is a popular open-source automation server that can be used to automate various tasks in a Java development project, such as:
-       - building and testing code,
-       - deploying applications, and
-       - managing project workflows.
-     - **Jenkins** offers a wide range of plugins that make it easy to integrate with other tools in the software development ecosystem.
-
-  5. **Docker**
-     - **Docker** is a containerization platform that allows developers to package applications and their dependencies into containers that can be easily deployed and run on any platform.
-     - **Docker** can be used to automate the build and deployment process of Java applications, making it easier to manage the application's dependencies and infrastructure.
-
 # Writing, Compiling, and Running a Java Program
 
 ## Basic Syntax Rules
