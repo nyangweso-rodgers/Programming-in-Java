@@ -55,9 +55,12 @@
 - You can download the **JDK** from the official [Oracle website]().
 - After you finish **JDK** installation, please reload Visual Studio Code to make it effective.
 
-## Step #2: Install the [Java Extension Pack]() in VSCode.
+## Step 2: Install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) in VS Code.
 
-- This pack includes everything you need to develop Java applications in Visual Studio Code.
+- This pack includes everything you need to develop **Java** applications in **Visual Studio Code**.
+- [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) is a popular extensions for **Java** development that provides Java IntelliSense, debugging, testing, Maven/Gradle support, project management and more
+- **Remark**:
+  - If you are a Spring developer working on a **Spring Boot** application, you can also download the [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack) for specialized **Spring** experience
 
 ## Step #3: Create a new Java project
 
