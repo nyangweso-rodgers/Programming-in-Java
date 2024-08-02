@@ -64,11 +64,146 @@
 - Once the project is imported, you’ll see it in your project explorer.
 - Navigate to the `src/main/java` directory and open the `DemoApplication.java` file.
   - You’ll find a `main` method in this file. Right-click on it and select Run Demo Application.
-  - Your Spring Boot application will start, and you can see the progress in the console. Once it’s up and running, you’ll see a message indicating that your application has started.
-  - Open a web browser and navigate to http://localhost:8080. You should see a "Whitelabel Error Page" because we haven't defined any specific endpoints yet.
+  - Your **Spring Boot application** will start, and you can see the progress in the console. Once it’s up and running, you’ll see a message indicating that your application has started.
+  - Open a web browser and navigate to http://localhost:9090. You should see a "Whitelabel Error Page" because we haven't defined any specific endpoints yet.
+- **Remark**:
+  - You can change the default port of your **Spring Boot application** by modifying the `application.properties` or `application.yml` file in your `src/main/resources` directory.
+    - Using `application.properties`: Add the following line to change the port number (e.g., to port 9090):
+      ```properties
+        server.port=9090
+      ```
+    - Using `application.yml`: Add the following line to change the port number (e.g., to port 9090):
+      ```yml
+      server:
+        port: 9090
+      ```
 
 ## Step 4: Create a simple REST endpoint
 
-- Create a new Java class, e.g., `HelloController.java`, in the same package as your `main` application class.
+- Create a new Java class, e.g., `TestController.java`, in the same package as your `main` application class.
 - Add the following code to create a basic REST endpoint:
-  `java`
+
+  ```java
+    package com.learning.spring_boot_api_with_postgresql;
+
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+
+    @RestController
+    @RequestMapping("/hello")
+    public class TestController {
+        @GetMapping
+        public String sayHello() {
+            return "Rodgers";
+        }
+    }
+  ```
+
+- Save the file, and your application will automatically reload with the new endpoint available at http://localhost:9090/hello
+- Open your web browser and navigate to http://localhost:9090/hello. You should see the message "Rodgers"
+
+## Remarks
+
+- For a Java project using **Gradle** and **Spring Boot**, here is a typical `.gitignore` file that you can use as a starting point:
+
+  ```.gitignore
+    # Compiled class files
+    *.class
+
+    # Log files
+    *.log
+
+    # BlueJ files
+    *.ctxt
+
+    # Mobile Tools for Java (J2ME)
+    .mtj.tmp/
+
+    # Package Files #
+    *.jar
+    *.war
+    *.nar
+    *.ear
+    *.zip
+    *.tar.gz
+    *.rar
+
+    # Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+    hs_err_pid*
+
+    # Eclipse/IntelliJ IDEA project files
+    *.idea/
+    *.classpath
+    *.project
+    *.settings/
+    *.vscode/
+
+    # Mac OS metadata
+    .DS_Store
+
+    # Windows thumbnail cache
+    Thumbs.db
+    ehthumbs.db
+
+    # Gradle
+    .gradle/
+    build/
+    out/
+    !gradle/wrapper/gradle-wrapper.jar
+
+    # Dependency directories
+    **/lib/
+    **/target/
+    **/build/
+    **/.mvn/
+    !**/src/main/**/resources/
+
+    # Gradle cache files
+    .gradle/
+    build/
+
+    # IDEs
+    .idea/
+    *.iml
+    *.ipr
+    *.iws
+    *.class
+    *.project
+    *.classpath
+    .cache
+    *.factorypath
+
+    # OS generated files
+    .DS_Store
+    *.swp
+    *~
+    .*.swp
+
+    # Logs and databases
+    *.log
+    *.sql
+    *.sqlite
+
+    # Spring Boot specific files
+    .spring-boot-devtools.properties
+    *.war
+    *.jar
+
+    # Temporary files
+    *.tmp
+    *.temp
+
+    # Other ignored files
+    *.bak
+    *.old
+    *.orig
+    *.rej
+    *.swo
+
+    # Application specific
+    **/db/*.h2.db
+    **/db/*.trace.db
+    **/db/*.mv.db
+    **/db/*.mv.db.lock
+  ```
