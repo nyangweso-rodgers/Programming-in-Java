@@ -121,6 +121,13 @@
 - Open the Command Palette and type "`Java: Run Java Program`" and press Enter.
 - This will run your program and the output "Hello, World!" should be displayed in the console.
 
+# Project Structure and Configuration in IntelliJ
+
+## Folders in IntelliJ
+
+- Every project module can include a number of folders that can be handled differently. When importing the project from a model (e.g. in the case of a Maven project) IDEA automatically discovers the source, test and resources folders.
+- To get the detailed overview of all the modules, libraries and other settings related to the project, open the Project Structure dialog **Ctrl+Shift+Alt+S / Cmd+**;
+
 # Resources
 
 1. [freeCodeCamp - How to Install Java in Ubuntu – JDK Linux Tutorial](https://www.freecodecamp.org/news/how-to-install-java-in-ubuntu/)
