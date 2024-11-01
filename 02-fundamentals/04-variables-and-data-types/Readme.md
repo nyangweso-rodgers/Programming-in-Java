@@ -154,7 +154,7 @@
       }
   ```
 
-- Differences Between Local, Instance and Static Variables
+- Differences Between **Local**, **Instance** and **Static Variables**
 
   1. **Scope**:
      - Local variables are confined to the block in which they are declared.
@@ -201,6 +201,100 @@
             System.out.println(width * length); // Output:
         }
     }
+  ```
+
+- Naming Conventions for Variables:
+  1. Use camelCase: Start with a lowercase letter, and capitalize each subsequent word (e.g., `totalAmount`, `studentCount`)
+  2. Avoid using Java keywords: For example, don’t name a variable `int`, `class`, or `if`.
+  3. Choose meaningful names: Variable names should indicate what data they store (e.g., `userAge`, `bookTitle`).
+
+# Java Data Types
+
+- Java has two main categories of data types: primitive and non-primitive.
+
+## 1. Primitive Data Types
+
+- Java’s primitive data types store simple values directly and are highly efficient. There are 8 primitive types:
+
+  1. `byte`
+     - size: 1 byte
+     - description: small integers from -128 to 127
+  2. `short`
+     - size: 2 bytes
+     - description: medium integers from -32,768 to 32,767
+  3. `int`
+     - size: 4 bytes
+     - description: standard integers from -2^31 to 2^31-1
+  4. `long`
+     - size: 8 bytes
+     - description: large integers from -2^63 to 2^63-1
+  5. `float`
+     - size: 4 bytes
+     - description: single-precision decimal values
+  6. `double`
+     - size: 8 bytes
+     - description: double-precision decimal values
+  7. `char`
+     - size: 2 bytes
+     - description: single 16-bit Unicode character (e.g., 'A')
+  8. `boolean`
+     - size: 1 bite
+     - description: holds either `true` or `false`
+
+- Examples:
+
+  ```java
+    byte smallNumber = 10;
+    int age 10;
+    double salary = 1000.56;
+    char initial = 'A';
+    boolean active = true;
+  ```
+
+## 2. Non-Primitive Data Types
+
+- **Non-primitive data types** include **classes**, **interfaces**, and **arrays**. Unlike **primitive data types**, they store references to objects
+
+- Examples:
+  1. `String`: stores sequences of characters
+     ```java
+      String greeting = "Hello, World!";
+     ```
+  2. `Arrays`: Collections of elements of the same data type
+     ```java
+      int[] numbers = {1, 2, 3, 4, 5};
+     ```
+
+# Type Casting in Java
+
+- Type casting allows you to convert a variable from one data type to another. There are two types of casting:
+
+## 1. Implicit Casting (Automatic):
+
+- Occurs when converting a smaller data type to a larger one
+
+- Example:
+  ```java
+    int num = 10;
+    double decimalNum = num;  // Automatic casting from int to double
+  ```
+
+## 2. Explicit Casting:
+
+- Required when converting a larger data type to a smaller one.
+- Example:
+  ```java
+    double decimalNum = 10.5;
+    int num = (int) decimalNum;  // Explicit casting from double to int
+  ```
+- **Note**: Explicit casting may lead to data loss, especially when converting from floating-point to integer types.
+
+# Constants in Java
+
+- If a variable’s value should remain unchanged, declare it as a constant using the `final` keyword. Conventionally, constant names are written in uppercase letters.
+- Example:
+  ```java
+    final int DAYS_IN_WEEK = 7;
   ```
 
 # Resources
