@@ -82,10 +82,10 @@
 
 - **Access specifiers** control the visibility and accessibility of class members (fields, methods, and nested classes).
 - There are typically four main types of access specifiers:
-  1.  public
-  2.  private
-  3.  protected, and
-  4.  default. They dictate where and how these members can be accessed, promoting encapsulation and modularity.
+  1.  `public`
+  2.  `private`
+  3.  `protected`, and
+  4.  `default`. They dictate where and how these members can be accessed, promoting encapsulation and modularity.
 - How to choose the right access specifier:
   1. **Public**: Use for widely used components, interfaces, and base classes.
   2. **Private**: Use for internal implementation details and sensitive data protection.
@@ -433,7 +433,7 @@
 
 ### 2.2. Static Methods
 
-- A static method belongs to the class rather than an instance of the class. This means you can call a static method without creating an instance (object) of the class. It's declared using the `static` keyword.
+- A `static` method belongs to the class rather than an instance of the class. This means you can call a `static` method without creating an instance (object) of the class. It's declared using the `static` keyword.
 - Static methods are commonly used for utility functions that don't depend on the state of an object. For example, methods for mathematical calculations, string manipulations, and so on.
 - Example:
 
@@ -450,6 +450,66 @@
       }
     }
   ```
+
+- Characteristics of **Static Utility Methods** include:
+
+  1. **Static Context**: Since they are declared as `static` you call such methods using the class name and hence no instantiation is required.
+  2. **No Dependency on Instance State**: Static methods are not able to access any instance variables or instance methods directly. They can only use static variables and call other static methods.
+  3. **Utility Functions**: These methods often serve some utility, such as **performing some calculations**, **formatting data**, or **handling string manipulations**; thus, they are perfectly suitable for helper or utility classes.
+  4. **Immutable Side Effects**: Static methods do not affect the common state. They can process some input and return a result without really changing any outside variables.
+
+- Examples of Static Utility Methods
+
+  1. **Math Utility Methods**
+
+     ```java
+       public class MathUtility {
+         // Static method to add two integers
+         public static int add(int a, int b) {
+             return a + b;
+         }
+
+         // Static method to calculate the square root of a number
+         public static double sqrt(double number) {
+             return Math.sqrt(number);
+         }
+     }
+
+     // Application usage
+     int sum = MathUtility.add(5, 10); // Returns 15
+     double squareRoot = MathUtility.sqrt(16); // Returns 4.0
+     ```
+
+  2. **String Utility Methods**
+
+     ```java
+       public class StringUtility {
+         public static String concatenate(String s1, String s2) {
+             return s1 + s2;
+         }
+
+         public static int getLength(String str) {
+             return str.length();
+         }
+     }
+
+     // Usage
+     String combined = StringUtility.concatenate("Hello, ", "World!"); // Returns "Hello, World!"
+     int length = StringUtility.getLength("Example"); // Returns 7
+     ```
+
+  3. **Java Wrapper Classes**
+
+     - Such static utility methods are available in the wrapper classes of Java.
+     - Examples include:
+
+       ```java
+        int number = Integer.parseInt("123"); // Converts String to int
+        String strNumber = Integer.toString(123); // Converts int to String
+
+        double value = Double.parseDouble("12.34"); // Converts String to double
+        String strValue = Double.toString(12.34); // Converts double to String
+       ```
 
 ### 2.3. Abstract Methods
 
